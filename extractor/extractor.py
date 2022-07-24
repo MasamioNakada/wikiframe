@@ -5,7 +5,7 @@ import warnings
 
 import pandas as pd
 
-class Load:
+class Extractor:
     def __init__(self, path:str):
         self.path = path
         self.labels = os.listdir(self.path) 
@@ -25,7 +25,7 @@ class Load:
                         print(sep)
                 file.close()  
         
-    def load_from_csv(self):
+    def extract_from_csv(self):
         data_dict = {}
 
         for name in self.labels:
