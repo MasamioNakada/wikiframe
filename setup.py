@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 VERSION = '0.0.1'
-DESCRIPTION = 'Convert all csv files in a folder to a diccionary of dataframe'
+DESCRIPTION = 'Convert all csv files in a folder to a diccionary of dataframe and more'
 LONG_DESCRIPTION = 'This package scan all the .csv files in a folder a convert into a dataframe, It is accept different csv delimiter and encodings.'
 
 # Setting up

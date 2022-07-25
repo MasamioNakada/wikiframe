@@ -1,5 +1,5 @@
-from wiki_tool.extractor import Extractor
-from wiki_tool.cow_say import Say 
+from wikiframe.extractor import Extractor
+from wikiframe.cow_say import Say 
 import pandas as pd
 import numpy as np
 
