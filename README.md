@@ -37,7 +37,7 @@
   <p align="center">
     Convert all csv files in a folder to a diccionary of dataframe and more!.
     <br />
-    <a href="https://github.com/MasamioNakada/wiki-tool"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/MasamioNakada/wiki-tools"><strong>Explore the docs »</strong></a>
     <br />
     <br />
   </p>
