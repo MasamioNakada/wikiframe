@@ -32,12 +32,12 @@
     <img src="https://cdn.discordapp.com/attachments/826683941053399091/928700680661782628/unknown.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Wiki-Tools</h3>
+<h3 align="center">WikiFrame</h3>
 
   <p align="center">
     Convert all csv files in a folder to a diccionary of dataframe and more!.
     <br />
-    <a href="https://github.com/MasamioNakada/wiki-tools"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/MasamioNakada/wikiframe"><strong>Explore the docs »</strong></a>
     <br />
     <br />
   </p>
@@ -58,7 +58,6 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -67,7 +66,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This package scan all the .csv files in a folder a convert into a dataframe, It is accept different csv delimiter and encodings. Also if you want to add transform functions, you can add it.
+WikiFrame scan all the .csv files in a folder and convert into a diccionary of dataframe, This package accept different csv delimiter and encodings. Also if you want to add transform dataframe-functions, you can add it!.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -77,7 +76,7 @@ This package scan all the .csv files in a folder a convert into a dataframe, It 
 
 1. Install from [PyPI](https://example.com)
     ```sh
-   git clone https://github.com/MasamioNakada/wiki-tools.git
+   git clone https://github.com/MasamioNakada/wikiframe.git
    ```
 
 
@@ -182,16 +181,16 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/MasamioNakada/wiki-tool.svg?style=for-the-badge
-[contributors-url]: https://github.com/MasamioNakada/wiki-tools/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/MasamioNakada/wiki-tools.svg?style=for-the-badge
-[forks-url]: https://github.com/MasamioNakada/wiki-tools/network/members
-[stars-shield]: https://img.shields.io/github/stars/MasamioNakada/wiki-tools.svg?style=for-the-badge
-[stars-url]: https://github.com/MasamioNakada/wiki-tools/stargazers
-[issues-shield]: https://img.shields.io/github/issues/MasamioNakada/wiki-tool.svg?style=for-the-badge
-[issues-url]: https://github.com/MasamioNakada/wiki-tools/issues
-[license-shield]: https://img.shields.io/github/license/MasamioNakada/wiki-tool.svg?style=for-the-badge
-[license-url]: https://github.com/MasamioNakada/wiki-tools/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/MasamioNakada/wikiframe.svg?style=for-the-badge
+[contributors-url]: https://github.com/MasamioNakada/wikiframe/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/MasamioNakada/wikiframe.svg?style=for-the-badge
+[forks-url]: https://github.com/MasamioNakada/wikiframe/network/members
+[stars-shield]: https://img.shields.io/github/stars/MasamioNakada/wikiframe.svg?style=for-the-badge
+[stars-url]: https://github.com/MasamioNakada/wikiframe/stargazers
+[issues-shield]: https://img.shields.io/github/issues/MasamioNakada/wikiframe.svg?style=for-the-badge
+[issues-url]: https://github.com/MasamioNakada/wikiframe/issues
+[license-shield]: https://img.shields.io/github/license/MasamioNakada/wikiframe.svg?style=for-the-badge
+[license-url]: https://github.com/MasamioNakada/wikiframe/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/MasamioNakada
 [product-screenshot]: images/screenshot.png

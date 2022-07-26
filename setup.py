@@ -1,20 +1,23 @@
 from setuptools import setup, find_packages
+from pathlib import Path
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DESCRIPTION = 'Convert all csv files in a folder to a diccionary of dataframe and more'
-LONG_DESCRIPTION = 'This package scan all the .csv files in a folder a convert into a dataframe, It is accept different csv delimiter and encodings.'
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
 
 # Setting up
 setup(
-    name="wiki-tools",
+    name="wikiframe",
     version=VERSION,
     author="MasamioNakada",
     author_email="nakada2130@gmail.com",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
-    long_description=LONG_DESCRIPTION,
+    long_description=long_description,
     packages=find_packages(),
-    install_requires=['numpy', 'pandas', 'python-dateutil','pytz','six'],
+    install_requires=['numpy', 'pandas', 'python-dateutil','pytz','six','chardet'],
     keywords=['pandas', 'read_csv', 'automated', 'dataframe', 'csv', 'etl','extract'],
     classifiers=[
         "Development Status :: 1 - Planning",
