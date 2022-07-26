@@ -76,7 +76,7 @@ WikiFrame scan all the .csv files in a folder and convert into a diccionary of d
 
 1. Install from [PyPI](https://example.com)
     ```sh
-   git clone https://github.com/MasamioNakada/wikiframe.git
+   pip install wikiframe
    ```
 
 
