@@ -26,7 +26,9 @@ def col_lower(df):
 
 if __name__ == '__main__':
     data_dict = extract.extract_from_csv([col_lower, find_date])
-    print(data_dict.keys())
+    #data_dict2 = extract.extract_from_csv()
+    print(data_dict['Clientes'].head())
+    #print(data_dict2['Clientes'].head())
     say.cow_says_good()
     say.cow_says_error()
 

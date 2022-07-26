@@ -46,9 +46,13 @@ class Extractor:
         --------
         encoding : The encoding of the file.
         '''
-        raw = open(full_path,'rb').read()
+        raw = open(self.path,'rb').read()
         encod = detect(raw)
-        return encod['encoding']
+        if encod['confidence'] <= 0.7:
+            warnings.warn(message = f'Chardet could not resolve encoding by {self.path}, encoding default -> utf-8', category=UnicodeWarning, stacklevel=2)
+            return 'utf-8'
+        else:
+            return encod['encoding']
 
     def __get_delimiter(self,full_path) -> str:
         '''
