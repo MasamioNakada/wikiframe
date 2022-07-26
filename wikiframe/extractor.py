@@ -34,7 +34,7 @@ class Extractor:
         self.path = path
         self.labels = os.listdir(self.path) 
 
-    def get_encoding(self,full_path) -> str:
+    def __get_encoding(self,full_path) -> str:
         '''
         This function will detect the encoding of the .csv file.
 
@@ -50,7 +50,7 @@ class Extractor:
         encod = detect(raw)
         return encod['encoding']
 
-    def get_delimiter(self,full_path) -> str:
+    def __get_delimiter(self,full_path) -> str:
         '''
         This function will detect the delimiter of the .csv file.
         
@@ -79,7 +79,7 @@ class Extractor:
                         warnings.warn(message = 'can not find a standard delimiter, using default delimiter ","', category=UnicodeWarning, stacklevel=2)
                 file.close()  
         
-    def extract_from_csv(self, func = None, verbose = False) -> dict:
+    def extract_from_csv(self, func = [], verbose = False) -> dict:
         '''
         This function will extract all the csv files in the folder and convert them to a dictionary of dataframe.
 
@@ -109,7 +109,7 @@ class Extractor:
         for name in self.labels:
             if name[-3:] == 'csv': 
                 full_path = f'{self.path}/{name}'
-                data_dict[name[:-4]] = read_csv(full_path,sep=self.get_delimiter(full_path),encoding=self.get_encoding(full_path),engine='python')
+                data_dict[name[:-4]] = read_csv(full_path,sep=self.__get_delimiter(full_path),encoding=self.__get_encoding(full_path),engine='python')
             else:
                 warnings.warn(message = f'{name} is not a csv file, ingoring', category=UnicodeWarning, stacklevel=2)
 
@@ -128,6 +128,8 @@ class Extractor:
                         if verbose == True:
                             print(f'{key} is transformed')
                 return data_dict
+            else:
+              return data_dict
 
         
 

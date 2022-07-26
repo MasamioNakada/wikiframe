@@ -41,6 +41,6 @@ class Say:
         print(" -" + lenght * "-" + "- ")
         print("        \   ^__^ ")
         print("         \  (oo)\_______ ")
-        print(f"            (__)\ good{choice(emoji_list)} )\/\ ")
+        print(f"            (__)\ error{choice(emoji_list)} )\/\ ")
         print("                ||----w | ")
         print("                ||     || ")
