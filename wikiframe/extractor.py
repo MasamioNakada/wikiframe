@@ -46,7 +46,7 @@ class Extractor:
         --------
         encoding : The encoding of the file.
         '''
-        raw = open(self.path,'rb').read()
+        raw = open(full_path,'rb').read()
         encod = detect(raw)
         if encod['confidence'] <= 0.7:
             warnings.warn(message = f'Chardet could not resolve encoding by {self.path}, encoding default -> utf-8', category=UnicodeWarning, stacklevel=2)

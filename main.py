@@ -31,7 +31,3 @@ if __name__ == '__main__':
     #print(data_dict2['Clientes'].head())
     say.cow_says_good()
     say.cow_says_error()
-
-
-
-
